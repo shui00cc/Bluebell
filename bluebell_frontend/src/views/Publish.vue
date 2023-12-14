@@ -26,7 +26,7 @@
       </div>
       <div class="post-footer">
         <div class="btns">
-          <button class="btn">取消</button>
+          <button class="btn" @click="redirectToHome()">取消</button>
           <button class="btn" @click="submit()">发表</button>
         </div>
       </div>
@@ -86,6 +86,9 @@ export default {
         .catch(error => {
           console.log(error);
         });
+    },
+    redirectToHome() {
+      this.$router.push('/');
     },
     getCommunityList() {
       this.$axios({
