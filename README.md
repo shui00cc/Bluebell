@@ -1,5 +1,8 @@
-# bluebell-plus
+# "随心记"Golang编程论坛
 基于Gin和Vue搭建的前后端分离的论坛项目。
+
+包含常见论坛所需的注册登录、评论等功能， 同时含有多个频道，
+可以在这里随时记录你想说的话、发表你对于编程学习的看法。
 
 上线网址：http://47.108.72.107:8084
 
@@ -83,7 +86,7 @@
 
 ## 项目预览图
 
-![img](https://s2.loli.net/2023/12/10/n4XAwLrpoFUWIdM.png)
+![](https://s2.loli.net/2023/12/14/alqKoUPsAZO2hmM.png)
 
 ![img](https://s2.loli.net/2023/12/10/u3qgEZR4mpkt6We.png)
 
