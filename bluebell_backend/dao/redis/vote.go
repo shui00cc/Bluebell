@@ -12,8 +12,8 @@ const (
 	OneWeekInSeconds  = 7 * 24 * 3600        // 一周的秒数
 	OneMonthInSeconds = 4 * OneWeekInSeconds // 一个月的秒数
 	//VoteScore         float64 = 432                  // 每一票的值432分
-	VoteScore  float64 = 86400 // shui00cc修改：一张票顶一天
-	PostPerAge         = 20    // 每页显示20条帖子
+	VoteScore   float64 = 86400 // shui00cc修改：一张票顶一天
+	PostPerPage         = 20    // 每页显示20条帖子
 )
 
 /*
@@ -140,8 +140,8 @@ func GetPost(order string, page int64) []map[string]string {
 	if order == "time" {
 		key = KeyPostTimeZSet
 	}
-	start := (page - 1) * PostPerAge
-	end := start + PostPerAge - 1
+	start := (page - 1) * PostPerPage
+	end := start + PostPerPage - 1
 	ids := client.ZRevRange(key, start, end).Val()
 	postList := make([]map[string]string, 0, len(ids))
 	for _, id := range ids {
