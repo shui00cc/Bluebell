@@ -31,7 +31,8 @@
             </div>
             <div class="l-container" @click="goDetail(post.post_id)">
               <h4 class="con-title">{{ post.title }}</h4>
-              <span class="author">By:{{ post.author_name }}</span>
+              <span class="author">By:{{ post.author_name }}</span><br>
+              <span class="author">{{ formatCreateTime(post.create_time) }}</span>
               <div class="con-memo">
                 <p>{{ post.content }}</p>
               </div>
@@ -80,6 +81,18 @@ export default {
     };
   },
   methods: {
+    // 格式化时间
+    formatCreateTime(createTime) {
+      const dateObject = new Date(createTime);
+      const year = dateObject.getFullYear();
+      const month = (dateObject.getMonth() + 1).toString().padStart(2, '0');
+      const day = dateObject.getDate().toString().padStart(2, '0');
+      const hours = dateObject.getHours().toString().padStart(2, '0');
+      const minutes = dateObject.getMinutes().toString().padStart(2, '0');
+      const seconds = dateObject.getSeconds().toString().padStart(2, '0');
+
+      return `${year}/${month}/${day},${hours}:${minutes}:${seconds}`;
+    },
     selectOrder(order) {
       this.order = order;
       this.getPostList();
