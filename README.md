@@ -1,6 +1,8 @@
 # bluebell-plus
 基于Gin和Vue搭建的前后端分离的论坛项目。
 
+上线网址：http://47.108.72.107:8084
+
 参考代码：
 
 [Q1mi/bluebell: bluebell (github.com)](https://github.com/Q1mi/bluebell)

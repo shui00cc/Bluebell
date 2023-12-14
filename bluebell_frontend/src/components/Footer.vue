@@ -5,7 +5,7 @@
 				<div class="grid-content bg-purple-dark footer">
 					<ul class="friends-link">
 						<li>
-							<a href="https://github.com/shui00cc" target="_blank">GitHub</a>
+							<a href="https://github.com/shui00cc/Bluebell" target="_blank">GitHub</a>
 						</li>
 						<li>
 							<a href="https://www.cnblogs.com/shui00cc/" target="_blank">博客园</a>

@@ -18,7 +18,7 @@
             <p>前后端及数据库:Go+Gin+Vue+Element-ui+MySQL+Redis</p>
             <p>
               项目包含 Viper配置管理、Zap日志记录、优雅关机、雪花算法生成分布式ID、JWT认证、air热重载、
-              Swagger接口文档、令牌桶限流、pprof性能测试等实用功能，想要了解更多请前往 <a href="https://github.com/shui00cc">GitHub</a>
+              Swagger接口文档、令牌桶限流、pprof性能测试等实用功能，想要了解更多请前往 <a href="https://github.com/shui00cc/Bluebell">GitHub</a>
             </p>
           </div>
         </transition>
